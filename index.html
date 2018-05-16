@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,500,700" rel="stylesheet">
+    <title>to do list app</title>
+</head>
+
+<body>
+    <div class="inputValues">
+        <input id="item" type="text" name="name of the list" value="erewr" placeholder="Name of the list">
+        <input id="qty" type="number" name="Quantity" value="22" placeholder="Quantity">
+        <button id="addItem">ADD</button>
+    </div>
+
+    <div class="container">
+
+        <ul id="listId" class="todo">
+            <li>
+                apple
+                <span> 1 </span>
+                <div class="buttons">
+                    <input type="hidden" value="0" />
+                    <button class="removeItem">
+                        <i class="fa fa-remove" style="font-size:24px"></i>
+                    </button>
+                    <button class="deleteItem">
+                        <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <h1>Confirmed list</h1>
+        <ul id="confirmedList"  class="todo">
+
+        </ul>
+        <button id="confirmButtonId">Confirm</button>
+    </div>
+    <script src="jscript.js"></script>
+
+</body>
+
+</html>
